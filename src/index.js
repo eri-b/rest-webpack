@@ -1,1 +1,3 @@
-console.log("webpack is working!");
+import setPage from './setup';
+
+setPage();
