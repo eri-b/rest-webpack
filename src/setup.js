@@ -1,3 +1,6 @@
+/* eslint no-use-before-define: "off" */
+/* eslint-env es6 */
+
 const setPage = () => {
   const content = document.querySelector('#content');
   const bg = '<main><h1>Pizza Hut</h1></main>';
