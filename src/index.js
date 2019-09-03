@@ -1,38 +1,38 @@
-import {setPage, showHome} from './setup';
+import { setPage, showHome } from './setup';
 import showMenu from './menu';
 import showContact from './contact';
 
 
 setPage();
 
-document.querySelector('#home').addEventListener('click', (e)=>{
+document.querySelector('#home').addEventListener('click', (e) => {
   activeNav(e);
   hideContent();
   showHome();
-})
+});
 
-document.querySelector('#menu').addEventListener('click', (e)=>{
+document.querySelector('#menu').addEventListener('click', (e) => {
   activeNav(e);
   hideContent();
   showMenu();
-})
+});
 
-document.querySelector('#contact').addEventListener('click', (e)=>{
+document.querySelector('#contact').addEventListener('click', (e) => {
   activeNav(e);
   hideContent();
   showContact();
-})
+});
 
-const hideContent = () =>{
+const hideContent = () => {
   const tab = document.getElementById('tab');
-  if (tab){
+  if (tab) {
     tab.remove();
   }
-}
+};
 
-const activeNav = (e)=>{
+const activeNav = (e) => {
   document.querySelectorAll('nav a').forEach((item) => {
-    item.classList.remove("active");
-  })
-  e.target.className += "active";
-}
+    item.classList.remove('active');
+  });
+  e.target.className += 'active';
+};
