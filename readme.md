@@ -13,10 +13,11 @@ npm install eslint --save-dev
 
 To package JS:
 `npx webpack`
+
 Output main.js in dist folder, as specified in webpack.config.js
 
 Code linted using ES Lint.
-`./node_modules/.bin/eslint src`
+```./node_modules/.bin/eslint src```
 Overrides specified in .eslintrc.js.
 Code fixed using `./node_modules/.bin/eslint src --fix`
 
