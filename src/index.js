@@ -2,7 +2,6 @@ import { setPage, showHome } from './setup';
 import showMenu from './menu';
 import showContact from './contact';
 
-
 setPage();
 
 document.querySelector('#home').addEventListener('click', (e) => {
